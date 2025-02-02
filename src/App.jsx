@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Adicionado React Router
+import { HashRouter as Router, Routes, Route } from "react-router-dom"; 
 
 // Importando todos os estilos
 import "./styles/base.css";
@@ -23,22 +23,27 @@ import Projetos from "./pages/Projetos";
 import Sobre from "./pages/Sobre"; 
 import Contato from "./pages/Contato"; 
 
+// Criando um componente para a Home
+function Home() {
+  return (
+    <>
+      <HeroSection />
+      <ProjectHighlight />
+      <ProjectsSection />
+      <ContactForm />
+    </>
+  );
+}
+
 function App() {
   return (
-    <Router> {/* Envolve a aplicação com Router */}
+    <Router> 
       <Header />
-      <Routes> {/* Define as rotas */}
-        <Route path="/" element={
-          <>
-            <HeroSection />
-            <ProjectHighlight />
-            <ProjectsSection />
-            <ContactForm />
-          </>
-        } />
-        <Route path="/projetos" element={<Projetos />} /> {/* Novo */}
-        <Route path="/sobre" element={<Sobre />} /> {/* Novo */}
-        <Route path="/contato" element={<Contato />} /> {/* Novo */}
+      <Routes> 
+        <Route path="/" element={<Home />} />
+        <Route path="/projetos" element={<Projetos />} />
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/contato" element={<Contato />} />
       </Routes>
       <Footer />
     </Router>

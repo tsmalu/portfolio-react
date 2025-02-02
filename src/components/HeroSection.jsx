@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom"; // Importando Link do React Router
 import "../styles/heroSection.css";
 
+
 function HeroSection() {
   return (
     <section className="hero-section">

@@ -1,5 +1,10 @@
+import projectHighlightImg from "/src/assets/imgs/ESG/esg-project-destaque.png";
+
+
 import React from "react";
 import "../styles/projectHighlight.css";
+
+
 
 function ProjectHighlight() {
   return (
@@ -12,7 +17,9 @@ function ProjectHighlight() {
         </a>
       </div>
       <div className="project-highlight-img">
-        <img src="/imgs/ESG/esg-project-destaque.png" alt="Tela inicial da plataforma de ESG" />
+      <a href="#" target="_blank">
+                  <img src={projectHighlightImg} alt="Tela inicial da plataforma de ESG" />
+                </a>
       </div>
     </section>
   );
