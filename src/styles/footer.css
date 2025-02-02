@@ -1,0 +1,38 @@
+/* FOOTER */
+.footer {
+    color: #383838;
+    padding: 40px 0;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li a {
+    color: #383838;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    font-weight: 800;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}
