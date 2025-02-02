@@ -17,9 +17,10 @@
 
 @font-face {
     font-family: 'MangoGrotesque';
-    src: url('fonts/MangoGrotesque-Medium.woff2') format('woff2'),
-         url('fonts/MangoGrotesque-Medium.woff') format('woff');
+    src: url('/fonts/MangoGrotesque-Medium.woff2') format('woff2'),
+         url('/fonts/MangoGrotesque-Medium.woff') format('woff');
 }
+
 
 /* Configurações gerais do body */
 body {
