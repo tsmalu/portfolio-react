@@ -1,14 +1,16 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom"; 
 
-// Importando todos os estilos
+// Importando os estilos
 import "./styles/base.css";
 import "./styles/header.css";
 import "./styles/footer.css";
 import "./styles/heroSection.css";
 import "./styles/projectHighlight.css";
 import "./styles/projectCard.css";
-import "./styles/contactForm.css";
+import "./styles/contactForm.css";  // ✅ Correto no App.jsx
+
+
 
 // Importando os componentes
 import Header from "./components/Header";
