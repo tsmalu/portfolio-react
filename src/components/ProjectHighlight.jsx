@@ -1,10 +1,7 @@
-import projectHighlightImg from "/src/assets/imgs/ESG/esg-project-destaque.png";
-
-
 import React from "react";
+import { Link } from "react-router-dom"; // ✅ Adicionando import correto do React Router
+import projectHighlightImg from "/src/assets/imgs/ESG/esg-project-destaque.png";
 import "../styles/projectHighlight.css";
-
-
 
 function ProjectHighlight() {
   return (
@@ -12,14 +9,14 @@ function ProjectHighlight() {
       <div className="project-highlight-text">
         <h2>Plataforma ESG para empresas</h2>
         <p>O cliente buscava uma solução que ajudasse empresas com a implantação de ações ESG.</p>
-        <a href="/pages/Projeto-esg.html" target="_blank">
+        <Link to="/projetos/esg">
           <button>Ver projeto</button>
-        </a>
+        </Link>
       </div>
       <div className="project-highlight-img">
-      <a href="#" target="_blank">
-                  <img src={projectHighlightImg} alt="Tela inicial da plataforma de ESG" />
-                </a>
+        <Link to="/projetos/esg">
+          <img src={projectHighlightImg} alt="Tela inicial da plataforma de ESG" />
+        </Link>
       </div>
     </section>
   );

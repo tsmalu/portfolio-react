@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import capaUiGame from "/src/assets/imgs/game-ui/capa-uigame.webp";
 import fretadaoRedesignCard1 from "/src/assets/imgs/fretadão redesign/projects-card-1.png";
 import enjoeiCover from "/src/assets/imgs/enjoei/enjoei-cover.png";
@@ -6,13 +7,12 @@ import React from "react";
 import "../styles/projectCard.css";
 import "../styles/projectsSection.css";
 
-
 function ProjectsSection() {
   console.log("ProjectsSection renderizado");
   return (
     <section className="projects-section container projects-page">
-      {/* Card 1 */}
-      <a href="pages/Projeto-uigame.html" className="project-card" target="_blank" rel="noopener noreferrer">
+      {/* Card 1 - Interface para jogo de xadrez */}
+      <Link to="/projetos/uigame" className="project-card">
         <div className="imagem">
           <img src={capaUiGame} alt="Tela inicial do jogo" />
         </div>
@@ -28,13 +28,12 @@ function ProjectsSection() {
             modos de jogo, área social, loja, tutoriais e interface para partidas multiplayer.
           </p>
         </div>
-      </a>
+      </Link>
 
-      {/* Card 2 */}
+      {/* Card 2 - Redesign de Marca e Site */}
       <a href="pages/Projeto-Redesign-fretadao.html" className="project-card" target="_blank" rel="noopener noreferrer">
         <div className="imagem">
-          <img src={fretadaoRedesignCard1} alt="Tela inicial do site fretadao"
-          />
+          <img src={fretadaoRedesignCard1} alt="Tela inicial do site fretadao" />
         </div>
         <div className="conteudo">
           <h3>Redesign de Marca e Site | 2019</h3>
@@ -50,7 +49,7 @@ function ProjectsSection() {
         </div>
       </a>
 
-      {/* Card 3 */}
+      {/* Card 3 - Comunicação Enjoei */}
       <a
         href="https://tsmalu.notion.site/Banners-enjoei-com-br-10fa3d1da95080a4b98bcaa8440d2d33"
         className="project-card"

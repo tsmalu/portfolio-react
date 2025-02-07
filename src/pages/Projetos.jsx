@@ -1,10 +1,18 @@
 import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import ProjectsSection from "../components/ProjectsSection"; 
 
 function Projetos() {
   return (
-    <div>
-      <h1>Meus Projetos</h1>
-      <p>Aqui estão alguns dos meus projetos...</p>
+    <div className="projetos-container">
+      {/* Hero Section */}
+      <section className="hero-section">
+        <h1>Projetos</h1>
+      </section>
+
+      {/* Container de Projetos */}
+      <ProjectsSection />
     </div>
   );
 }
