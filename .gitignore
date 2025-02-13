@@ -1,0 +1,16 @@
+# Pasta do Node.js (evita enviar dependências)
+node_modules/
+
+# Cache do Vite (se estiver usando)
+.vite/
+
+# Pasta de build (se existir)
+dist/
+build/
+
+# Arquivo do macOS (pode apagar se quiser)
+.DS_Store
+
+# Logs e arquivos de ambiente (se tiver)
+*.log
+.env
