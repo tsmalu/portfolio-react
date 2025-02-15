@@ -7,7 +7,11 @@ function ProjectHighlight() {
   return (
     <section className="project-highlight container">
       <div className="project-highlight-text">
+<<<<<<< HEAD
         <h2>Plataforma ESG para empresas</h2>
+=======
+        <h2>Plataforma ESG</h2>
+>>>>>>> recuperacao
         <p>O cliente buscava uma solução que ajudasse empresas com a implantação de ações ESG. 
           O projeto incluiu imersão, entrevistas com especialistas e colaboração na definição de escopo e funcionalidades.</p>
         

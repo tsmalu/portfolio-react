@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import fotoMalu from "../assets/imgs/global/foto-malu.jpeg";
 
 const Breadcrumb = () => {
@@ -41,5 +42,17 @@ const Breadcrumb = () => {
     </>
   );
 }  
+=======
+
+const Breadcrumb = () => {
+  return (
+    <nav className="breadcrumb">
+      <Link to="/">Início</Link> &gt; 
+      <Link to="/projetos">Projetos</Link> &gt; 
+      <span>Plataforma ESG</span>
+    </nav>
+  );
+};  
+>>>>>>> recuperacao
 
 export default Breadcrumb;
