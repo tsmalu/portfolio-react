@@ -101,8 +101,6 @@ const ProjetoESG = () => {
 
   return (
     <div className="project-content">
-      <Breadcrumb />
-
       <ProjectHeader
         title="Plataforma para gerenciar ações de ESG"
         tags={["UI e UX", "Pesquisa", "Consultoria"]}
