@@ -2,18 +2,11 @@ import React from "react";
 
 // Componentes
 import Breadcrumb from "../components/Breadcrumb";
-<<<<<<< HEAD
-import SectionIntroduction from "../components/SectionIntroduction";
-import Personas from "../components/Personas";
-
-// Estilos 
-=======
 import ProjectHeader from "../components/ProjectHeader";
 import SectionIntroduction from "../components/SectionIntroduction";
 import Personas from "../components/Personas";
 
 // Estilos
->>>>>>> recuperacao
 import "../styles/projects.css";
 
 // Imagens
@@ -21,48 +14,28 @@ import esgMatrizCSD from "../assets/imgs/ESG/esg-matriz-csd.jpeg";
 import esgWorkshop1 from "../assets/imgs/ESG/esg-workshop-esg-1.webp";
 import esgWorkshop2 from "../assets/imgs/ESG/esg-workshop-esg-2.webp";
 import esgJornada from "../assets/imgs/ESG/esg-jornada.png";
-<<<<<<< HEAD
-import esgRevisao from "../assets/imgs/ESG/esg-revisão.png";
-=======
->>>>>>> recuperacao
 import esgFluxo from "../assets/imgs/ESG/esg-fluxo-navegacao.png";
 import esgUI from "../assets/imgs/ESG/ESG-Componentes-ui.png";
 import esgCores from "../assets/imgs/ESG/Cores-esg.png";
 import esgTipografia from "../assets/imgs/ESG/Tipografia-esg.png";
-<<<<<<< HEAD
-import esgPrototipacao from "../assets/imgs/ESG/Prototipação-esg.png";
-import esgTelas from "../assets/imgs/ESG/Telas-esg.png";
-=======
 import esgTelas from "../assets/imgs/ESG/Telas-esg.png";
 import esgPrototipacao from "../assets/imgs/ESG/esg-prototipacao.png";
 import esgRevisao from "../assets/imgs/ESG/esg-revisao.png";
->>>>>>> recuperacao
 
 const ProjetoESG = () => {
   const introParagraphs = [
     "O cliente buscava uma solução para empresas e profissionais com a missão de implantar ações ESG na organização. O projeto inclui imersão, entrevistas com especialistas e colaboração na definição de escopo e funcionalidades. Resultado: Uma plataforma ESG para diagnóstico, definição de temas materiais e acompanhamento de metas e ações.",
     "O cliente é uma unidade de inovação que promove a inovação, conecta ecossistemas e desenvolve projetos para o agronegócio e meio ambiente.",
-<<<<<<< HEAD
-    <h3>Desafio</h3>,
-    "O cliente enfrentava o desafio estratégico de fornecer suporte efetivo às empresas parceiras e clientes na gestão de boas práticas em ESG. A necessidade de construir um produto ESG surgiu naturalmente devido à crescente demanda e à experiência acumulada em projetos anteriores.",
-    "Muitas dessas empresas não tinham clareza sobre suas próprias necessidades em ESG, exigindo um diagnóstico inicial. O cliente espera conseguir novos projetos ao oferecer soluções de inovação aberta abordando diretamente as preocupações de ESG.",
-    
-=======
 
     <h3>Desafio</h3>,
     "O cliente enfrentava o desafio estratégico de fornecer suporte efetivo às empresas parceiras e clientes na gestão de boas práticas em ESG. A necessidade de construir um produto ESG surgiu naturalmente devido à crescente demanda e à experiência acumulada em projetos anteriores.",
     "Muitas dessas empresas não tinham clareza sobre suas próprias necessidades em ESG, exigindo um diagnóstico inicial. O cliente espera conseguir novos projetos ao oferecer soluções de inovação aberta abordando diretamente as preocupações de ESG.",
 
->>>>>>> recuperacao
     <h3>Descoberta</h3>,
     "Iniciamos a etapa de descoberta compreendendo o tema ESG por meio de um treinamento conduzido por Mariana Leite, consultora e gerente de negócios especializada na área.",
     "Realizamos entrevistas com consultores e profissionais que atuam com ESG nas empresas onde trabalham. O processo de entrevistas mostrou detalhes sobre os desafios que as empresas enfrentam ao adotar práticas ESG.",
     "Com as informações levantadas nas entrevistas foi possível validar as suposições e responder a alguns dos questionamentos feitos durante o Kick off utilizando a Matriz CSD.",
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> recuperacao
     <section className="project-image">
       <img src={esgMatrizCSD} alt="Matriz CSD: Ferramenta que mapeia as certezas, suposições e dúvidas sobre o projeto." />
     </section>,
@@ -123,24 +96,13 @@ const ProjetoESG = () => {
 
     <section className="project-image">
       <img src={esgTelas} alt="Telas da plataforma." />
-<<<<<<< HEAD
-    </section>
-  ];
-
-=======
     </section>,
   ];
 
-
->>>>>>> recuperacao
   return (
     <div className="project-content">
-      {/* Breadcrumb */}
       <Breadcrumb />
-<<<<<<< HEAD
-=======
-      
-      {/* Cabeçalho do Projeto ESG */}
+
       <ProjectHeader
         title="Plataforma para gerenciar ações de ESG"
         tags={["UI e UX", "Pesquisa", "Consultoria"]}
@@ -148,9 +110,7 @@ const ProjetoESG = () => {
         role="Designer"
         details="Projeto feito para Performa_IT Consultoria • 2023"
       />
->>>>>>> recuperacao
 
-      {/* Conteúdo principal */}
       <SectionIntroduction title="Visão geral" paragraphs={introParagraphs} />
     </div>
   );

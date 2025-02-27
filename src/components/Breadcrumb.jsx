@@ -1,12 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
 import fotoMalu from "../assets/imgs/global/foto-malu.jpeg";
 
 const Breadcrumb = () => {
-  // BASE_URL será "/" em dev e "/portfolio-react/" no build de produção
-  const baseUrl = import.meta.env.BASE_URL;
-
   return (
     <>
       <nav className="breadcrumb">
@@ -25,7 +21,7 @@ const Breadcrumb = () => {
           <div className="author-info">
             <img
               src={fotoMalu}
-              alt="Foto de maria luisa"
+              alt="Foto de Maria Luisa"
               className="author-avatar"
             />
             <div className="author-details">
@@ -41,18 +37,6 @@ const Breadcrumb = () => {
       </div>
     </>
   );
-}  
-=======
-
-const Breadcrumb = () => {
-  return (
-    <nav className="breadcrumb">
-      <Link to="/">Início</Link> &gt; 
-      <Link to="/projetos">Projetos</Link> &gt; 
-      <span>Plataforma ESG</span>
-    </nav>
-  );
-};  
->>>>>>> recuperacao
+};
 
 export default Breadcrumb;
