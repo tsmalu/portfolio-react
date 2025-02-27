@@ -274,3 +274,56 @@ margin-bottom: 30px;
   text-decoration: none;
   color: inherit;
 }
+.card-content {
+  display: flex; /* Layout flexível para alinhar imagem e texto */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 40px;
+  padding: 16px;
+}
+
+.card-text {
+  flex: 1; /* O texto ocupa o espaço restante */
+}
+.card-text h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 8px; /* Espaçamento inferior */
+}
+
+.card-text p {
+  font-size: 14px;
+  color: #666; /* Cor do texto secundário */
+  margin: 0;
+}
+
+.card-image {
+  width: 200px; /* Largura fixa para a imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Bordas arredondadas na imagem */
+  object-fit: cover; /* Ajusta o conteúdo para preencher o container */
+}
+
+
+
+.card-text p {
+  font-size: 14px;
+  color: #666; /* Cor do texto secundário */
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .card-content {
+    flex-direction: column; /* Empilha texto e imagem */
+    text-align: center; /* Centraliza o texto */
+    
+  }
+  .card-text p {
+    font-size: 14px;
+    color: #666; /* Cor do texto secundário */
+    padding: 24px !important;
+  }
+  .card-image {
+    width: 200px; /* Largura fixa para a imagem */
+    max-width: none; /* Remove restrição de tamanho */
+  }
+}
