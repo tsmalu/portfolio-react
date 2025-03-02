@@ -53,7 +53,7 @@ function App() {
         <Route path="/projeto-esg" element={<ProjetoESG />} />
         <Route path="/projeto-ui-game" element={<ProjetoUiGame />} />
         <Route path="/projeto-redesign-fretadao" element={<ProjetoRedesignFretadao />} />
-        <Route path="/projeto-enjoei" element={<ProjetoEnjoei />} />
+        <Route path="/projeto-enjoei" element={<ProjetoEnjoei />} /> 
       </Routes>
       <Footer />
     </Router>
