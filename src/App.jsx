@@ -26,6 +26,7 @@ import Contato from "./pages/Contato";
 import ProjetoESG from "./pages/ProjetoESG"; 
 import ProjetoUiGame from "./pages/ProjetoUiGame";
 import ProjetoRedesignFretadao from "./pages/ProjetoRedesignFretadao";
+import ProjetoEnjoei from "./pages/ProjetoEnjoei";
 
 // Criando um componente para a Home
 function Home() {
@@ -52,6 +53,7 @@ function App() {
         <Route path="/projeto-esg" element={<ProjetoESG />} />
         <Route path="/projeto-ui-game" element={<ProjetoUiGame />} />
         <Route path="/projeto-redesign-fretadao" element={<ProjetoRedesignFretadao />} />
+        <Route path="/projeto-enjoei" element={<ProjetoEnjoei />} />
       </Routes>
       <Footer />
     </Router>

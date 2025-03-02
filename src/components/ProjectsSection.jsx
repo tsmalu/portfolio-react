@@ -51,24 +51,19 @@ function ProjectsSection() {
       </Link>
 
       {/* Card 3 */}
-      <a
-        href="https://tsmalu.notion.site/Banners-enjoei-com-br-10fa3d1da95080a4b98bcaa8440d2d33"
-        className="project-card"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="imagem">
-          <img src={enjoeiCover} alt="Imagem do projeto" />
-        </div>
-        <div className="conteudo">
-          <h3>Comunicação | enjoei.com.br | 2016-2019</h3>
-          <div className="tags">
-            <span className="tag">Design Gráfico</span>
-            <span className="tag">Ilustração</span>
-          </div>
-          <p>Criação de materiais para campanhas de marketing para engajamento com o público.</p>
-        </div>
-      </a>
+      <Link to="/projeto-enjoei" className="project-card">
+  <div className="imagem">
+    <img src={enjoeiCover} alt="Imagem do projeto Enjoei" />
+  </div>
+  <div className="conteudo">
+    <h3>Comunicação | enjoei.com.br | 2016-2019</h3>
+    <div className="tags">
+      <span className="tag">Design Gráfico</span>
+      <span className="tag">Ilustração</span>
+    </div>
+    <p>Criação de materiais para campanhas de marketing para engajamento com o público.</p>
+  </div>
+</Link>
     </section>
   );
 }
