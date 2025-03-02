@@ -1,0 +1,98 @@
+/* HEADER */
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+
+/* LOGO */
+.logo {
+    font-family: 'MangoGrotesque', sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+    color: #383838;
+}
+
+.logo a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* MENU */
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul a {
+    position: relative;
+    text-decoration: none;
+    color: #383838;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #383838;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+/* MENU RESPONSIVO */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 40px;
+    color: #000;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 40px 0px 40px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 0;
+        width: 100%;
+        background-color: #f9f9f9;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

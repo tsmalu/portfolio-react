@@ -1,0 +1,53 @@
+.contact-section {
+    text-align: center;
+    padding: 80px 0;
+    opacity: 1; /* Trocar de 0 para 1 */
+    transform: translateY(0); /* Removendo deslocamento */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    display: flex;
+  flex-direction: column; /* Garante que os elementos fiquem em coluna */
+  align-items: center; /* Centraliza os itens na horizontal */
+  justify-content: center; /* Centraliza na vertical */
+}
+
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Garante que ele ocupe o espaço permitido */
+}
+
+
+.contact-section input,
+.contact-section textarea {
+    width: 100%;
+    max-width: 600px; /* Evita que os campos fiquem muito largos */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #BCBBBB;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-section button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px; /* Define a largura exata do botão */
+    display: flex;
+    justify-content: center; /* Centraliza o texto dentro do botão */
+    align-items: center;
+    margin: 20px auto; /* Centraliza o botão dentro do formulário */
+}
+
+
+.contact-section button:hover {
+    background-color: #555;
+}
