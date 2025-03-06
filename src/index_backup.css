@@ -17,12 +17,11 @@
 
 @font-face {
     font-family: 'MangoGrotesque';
-    src: url('/fonts/MangoGrotesque-Medium.woff2') format('woff2'),
-         url('/fonts/MangoGrotesque-Medium.woff') format('woff');
+    src: url('/MangoGrotesque-Medium.woff2') format('woff2'),
+         url('/MangoGrotesque-Medium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
 
 
 
@@ -44,7 +43,7 @@ p {
 }
 
 h1, h2 {
-    font-family: 'MangoGrotesque';
+    font-family: 'MangoGrotesque' !important;
     font-weight: 500;
     margin-bottom: 8px;
     line-height: 100%;
@@ -142,3 +141,10 @@ button a:active {
       opacity: 1;
     }
   }
+  
+  body {
+    font-family: "MangoGrotesque", sans-serif;
+}
+h1, h2 {
+    font-family: "MangoGrotesque", sans-serif !important;
+}
