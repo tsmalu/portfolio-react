@@ -14,3 +14,4 @@ build/
 # Logs e arquivos de ambiente
 *.log
 .env
+!dist/
