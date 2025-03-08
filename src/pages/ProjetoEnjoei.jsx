@@ -1,10 +1,6 @@
 import React from "react";
-
-// Componentes
 import ProjectHeader from "../components/ProjectHeader";
 import SectionIntroduction from "../components/SectionIntroduction";
-
-// Estilos
 import "../styles/projects.css";
 
 // Imagens
@@ -51,21 +47,57 @@ import enjoeiImg40 from "../assets/imgs/enjoei/enjoei-imgs-40.png";
 import enjoeiImg41 from "../assets/imgs/enjoei/enjoei-imgs-41.png";
 import enjoeiImg42 from "../assets/imgs/enjoei/enjoei-imgs-42.png";
 
-
-
-
-
-
-
-
 const ProjetoEnjoei = () => {
   const introParagraphs = [
     "Criação de materiais para campanhas de marketing e newsletters, garantindo engajamento com o público. As peças ajudaram a destacar as ofertas do e-commerce, transmitindo a identidade descontraída e irreverente da marca de forma atraente e eficiente.",
   ];
 
+  const imageContent = [
+    { type: "image", src: enjoeiImg1, alt: "Campanha Enjoei 01" },
+    { type: "image", src: enjoeiImg2, alt: "Campanha Enjoei 02" },
+    { type: "image", src: enjoeiImg3, alt: "Campanha Enjoei 03" },
+    { type: "image", src: enjoeiImg4, alt: "Campanha Enjoei 04" },
+    { type: "image", src: enjoeiImg5, alt: "Campanha Enjoei 05" },
+    { type: "image", src: enjoeiImg6, alt: "Campanha Enjoei 06" },
+    { type: "image", src: enjoeiImg7, alt: "Campanha Enjoei 07" },
+    { type: "image", src: enjoeiImg8, alt: "Campanha Enjoei 08" },
+    { type: "image", src: enjoeiImg9, alt: "Campanha Enjoei 09" },
+    { type: "image", src: enjoeiImg10, alt: "Campanha Enjoei 10" },
+    { type: "image", src: enjoeiImg11, alt: "Campanha Enjoei 11" },
+    { type: "image", src: enjoeiImg12, alt: "Campanha Enjoei 12" },
+    { type: "image", src: enjoeiImg13, alt: "Campanha Enjoei 13" },
+    { type: "image", src: enjoeiImg14, alt: "Campanha Enjoei 14" },
+    { type: "image", src: enjoeiImg15, alt: "Campanha Enjoei 15" },
+    { type: "image", src: enjoeiImg16, alt: "Campanha Enjoei 16" },
+    { type: "image", src: enjoeiImg17, alt: "Campanha Enjoei 17" },
+    { type: "image", src: enjoeiImg18, alt: "Campanha Enjoei 18" },
+    { type: "image", src: enjoeiImg19, alt: "Campanha Enjoei 19" },
+    { type: "image", src: enjoeiImg20, alt: "Campanha Enjoei 20" },
+    { type: "image", src: enjoeiImg21, alt: "Campanha Enjoei 21" },
+    { type: "image", src: enjoeiImg22, alt: "Campanha Enjoei 22" },
+    { type: "image", src: enjoeiImg23, alt: "Campanha Enjoei 23" },
+    { type: "image", src: enjoeiImg24, alt: "Campanha Enjoei 24" },
+    { type: "image", src: enjoeiImg25, alt: "Campanha Enjoei 25" },
+    { type: "image", src: enjoeiImg26, alt: "Campanha Enjoei 26" },
+    { type: "image", src: enjoeiImg27, alt: "Campanha Enjoei 27" },
+    { type: "image", src: enjoeiImg28, alt: "Campanha Enjoei 28" },
+    { type: "image", src: enjoeiImg29, alt: "Campanha Enjoei 29" },
+    { type: "image", src: enjoeiImg31, alt: "Campanha Enjoei 31" },
+    { type: "image", src: enjoeiImg32, alt: "Campanha Enjoei 32" },
+    { type: "image", src: enjoeiImg33, alt: "Campanha Enjoei 33" },
+    { type: "image", src: enjoeiImg34, alt: "Campanha Enjoei 34" },
+    { type: "image", src: enjoeiImg35, alt: "Campanha Enjoei 35" },
+    { type: "image", src: enjoeiImg36, alt: "Campanha Enjoei 36" },
+    { type: "image", src: enjoeiImg37, alt: "Campanha Enjoei 37" },
+    { type: "image", src: enjoeiImg38, alt: "Campanha Enjoei 38" },
+    { type: "image", src: enjoeiImg39, alt: "Campanha Enjoei 39" },
+    { type: "image", src: enjoeiImg40, alt: "Campanha Enjoei 40" },
+    { type: "image", src: enjoeiImg41, alt: "Campanha Enjoei 41" },
+    { type: "image", src: enjoeiImg42, alt: "Campanha Enjoei 42" },
+  ];
+
   return (
     <div className="project-content">
-      {/* Cabeçalho do projeto */}
       <ProjectHeader
         title="Comunicação | enjoei.com.br | 2016-2019"
         tags={["Design Gráfico", "Ilustração"]}
@@ -74,138 +106,14 @@ const ProjetoEnjoei = () => {
         details="Projeto feito para enjoei.com.br • 2016-2019"
       />
 
-      {/* Introdução */}
       <SectionIntroduction title="Visão geral" paragraphs={introParagraphs} />
 
       {/* Imagens do projeto */}
- {/* Imagens do projeto */}
-      <section className="project-image">
-        <img src={enjoeiImg1} alt="Campanha Enjoei 01" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg2} alt="Campanha Enjoei 02" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg3} alt="Campanha Enjoei 03" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg4} alt="Campanha Enjoei 04" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg5} alt="Campanha Enjoei 05" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg6} alt="Campanha Enjoei 06" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg7} alt="Campanha Enjoei 07" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg8} alt="Campanha Enjoei 08" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg9} alt="Campanha Enjoei 09" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg10} alt="Campanha Enjoei 10" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg11} alt="Campanha Enjoei 11" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg12} alt="Campanha Enjoei 12" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg13} alt="Campanha Enjoei 13" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg14} alt="Campanha Enjoei 14" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg15} alt="Campanha Enjoei 15" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg16} alt="Campanha Enjoei 16" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg17} alt="Campanha Enjoei 17" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg18} alt="Campanha Enjoei 18" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg19} alt="Campanha Enjoei 19" />  
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg20} alt="Campanha Enjoei 20" />
-      </section>
-      <section className="project-image">
-        <img src={enjoeiImg21} alt="Campanha Enjoei 21" />  
-      </section>
-      <section className="project-image">
-  <img src={enjoeiImg22} alt="Campanha Enjoei 22" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg23} alt="Campanha Enjoei 23" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg24} alt="Campanha Enjoei 24" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg25} alt="Campanha Enjoei 25" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg26} alt="Campanha Enjoei 26" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg27} alt="Campanha Enjoei 27" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg28} alt="Campanha Enjoei 28" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg29} alt="Campanha Enjoei 29" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg31} alt="Campanha Enjoei 31" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg32} alt="Campanha Enjoei 32" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg33} alt="Campanha Enjoei 33" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg34} alt="Campanha Enjoei 34" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg35} alt="Campanha Enjoei 35" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg36} alt="Campanha Enjoei 36" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg37} alt="Campanha Enjoei 37" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg38} alt="Campanha Enjoei 38" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg39} alt="Campanha Enjoei 39" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg40} alt="Campanha Enjoei 40" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg41} alt="Campanha Enjoei 41" />
-</section>
-<section className="project-image">
-  <img src={enjoeiImg42} alt="Campanha Enjoei 42" />
-</section>
-
-        
-
-
+      {imageContent.map((image, index) => (
+        <section className="project-image" key={index}>
+          <img src={image.src} alt={image.alt} />
+        </section>
+      ))}
     </div>
   );
 };

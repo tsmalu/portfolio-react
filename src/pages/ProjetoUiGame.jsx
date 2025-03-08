@@ -13,10 +13,12 @@ import telas2UiGame from "../assets/imgs/Game-UI/telas2-uigame.png";
 import telas3UiGame from "../assets/imgs/Game-UI/telas3-uigame.png";
 
 const ProjetoUIGame = () => {
-  const introParagraphs = [
-    "Desenvolvimento de interface para um jogo de xadrez. O projeto envolveu a criação de componentes visuais para telas como menu principal, seleção de modos de jogo, área social, loja, tutoriais e interface para partidas multiplayer.",
-    <h3>Introdução</h3>,
-    "Dentro do eChess, você poderá explorar recursos incríveis, como aprender a jogar com os tutoriais, adquirir novos e empolgantes temas na loja e se conectar facilmente para jogar com seus amigos. Divirta-se com o chat de vídeo integrado, que conta com efeitos especiais e muito mais.",
+  const introContent = [
+    { type: "paragraph", text: "Desenvolvimento de interface para um jogo de xadrez. O projeto envolveu a criação de componentes visuais para telas como menu principal, seleção de modos de jogo, área social, loja, tutoriais e interface para partidas multiplayer." },
+
+    { type: "title", text: "Introdução" },
+
+    { type: "paragraph", text: "Dentro do eChess, você poderá explorar recursos incríveis, como aprender a jogar com os tutoriais, adquirir novos e empolgantes temas na loja e se conectar facilmente para jogar com seus amigos. Divirta-se com o chat de vídeo integrado, que conta com efeitos especiais e muito mais." },
   ];
 
   return (
@@ -31,7 +33,7 @@ const ProjetoUIGame = () => {
       />
 
       {/* Conteúdo do projeto */}
-      <SectionIntroduction title="Visão geral" paragraphs={introParagraphs} />
+      <SectionIntroduction title="Visão geral" content={introContent} />
 
       {/* Imagens do projeto */}
       <section className="project-image">
